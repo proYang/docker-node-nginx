@@ -1,0 +1,17 @@
+{
+  "name": "docker-node-nginx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pm2": "^3.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "pm2 start index.js --no-daemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

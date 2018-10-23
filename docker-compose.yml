@@ -1,0 +1,26 @@
+version: '2.1'
+
+networks:
+  server:
+
+services:
+  
+  # node 服务配置
+  node-server:
+    build: ./node-server
+    environment:
+      NODE_ENV: production
+    networks:
+      - server
+    ports:
+      - "2368:2368"
+
+  # nginx 服务配置
+  nginx:
+    build: ./nginx
+    depends_on:
+      - node-server
+    networks: 
+      - server
+    ports:
+      - "80:80"
