@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "pm2 start index.js --no-daemon"
+    "start": "pm2 start ./src/index.js --no-daemon"
   },
   "keywords": [],
   "author": "",
