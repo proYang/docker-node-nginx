@@ -23,6 +23,7 @@ services:
     networks: 
       - server
     volumes: 
+      # Dockerfile中不支持这种挂载方式
       # 挂载www目录
       - ./nginx/www:/var/www/demo
       # 挂载nginx log目录
