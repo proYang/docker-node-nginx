@@ -7,7 +7,7 @@
 ## docker-compose 常用命令
 Docker for Mac && Windows 内置 docker-compost，其余Linux系统需要安装Docker后，再安装Docker Compose
 ```bash
-docker-compost stop     # 停止容器  
+docker-compose stop     # 停止容器  
 docker-compose rm       # 删除容器
 docker-compose build    # 重新建立
 docker-compose up -d    # 启动运行 加-d 表示后台运行
